@@ -1,0 +1,11 @@
+{
+	"name": "atem-iso-streamdeck-runtime",
+	"private": true,
+	"description": "Libraries the plugin loads at runtime. Installed into this folder by 'npm run build'.",
+	"dependencies": {
+		"atem-connection": "3.11.1"
+	},
+	"overrides": {
+		"@julusian/freetype2": "file:./stubs/freetype2"
+	}
+}

@@ -1,0 +1,266 @@
+{
+	"Name": "ISO Director for ATEM",
+	"Version": "0.1.0.0",
+	"Author": "DC Director",
+	"Actions": [
+		{
+			"Name": "Program",
+			"UUID": "com.dcdirector.atem-iso.program",
+			"Icon": "imgs/actions/program-icon",
+			"Tooltip": "Cut a source straight to air. Lights red while it is live.",
+			"PropertyInspectorPath": "ui/source.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/program-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Preview",
+			"UUID": "com.dcdirector.atem-iso.preview",
+			"Icon": "imgs/actions/preview-icon",
+			"Tooltip": "Line a source up as next. Lights green while selected.",
+			"PropertyInspectorPath": "ui/source.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/preview-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Cut",
+			"UUID": "com.dcdirector.atem-iso.cut",
+			"Icon": "imgs/actions/cut-icon",
+			"Tooltip": "Swap preview and program instantly.",
+			"PropertyInspectorPath": "ui/simple.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/cut-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Auto",
+			"UUID": "com.dcdirector.atem-iso.auto",
+			"Icon": "imgs/actions/auto-icon",
+			"Tooltip": "Run the selected transition. Lights red while it moves.",
+			"PropertyInspectorPath": "ui/simple.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/auto-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Fade to Black",
+			"UUID": "com.dcdirector.atem-iso.ftb",
+			"Icon": "imgs/actions/ftb-icon",
+			"Tooltip": "Fade the program to black, and back on the next press.",
+			"PropertyInspectorPath": "ui/simple.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/ftb-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Transition Style",
+			"UUID": "com.dcdirector.atem-iso.transition-style",
+			"Icon": "imgs/actions/transition-style-icon",
+			"Tooltip": "Choose mix, dip, wipe or DVE for the Auto button.",
+			"PropertyInspectorPath": "ui/style.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/transition-style-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Upstream Key (PiP)",
+			"UUID": "com.dcdirector.atem-iso.upstream-key",
+			"Icon": "imgs/actions/upstream-key-icon",
+			"Tooltip": "Put the upstream keyer on or off air. Used for picture-in-picture and green screen.",
+			"PropertyInspectorPath": "ui/keyer.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/upstream-key-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Downstream Key",
+			"UUID": "com.dcdirector.atem-iso.downstream-key",
+			"Icon": "imgs/actions/downstream-key-icon",
+			"Tooltip": "Put the downstream keyer on or off air. Used for logos and lower thirds.",
+			"PropertyInspectorPath": "ui/keyer.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/downstream-key-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "HDMI Output",
+			"UUID": "com.dcdirector.atem-iso.output",
+			"Icon": "imgs/actions/output-icon",
+			"Tooltip": "Choose what the HDMI output shows: multiview, program, or a camera.",
+			"PropertyInspectorPath": "ui/output.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/output-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Record",
+			"UUID": "com.dcdirector.atem-iso.record",
+			"Icon": "imgs/actions/record-icon",
+			"Tooltip": "Start and stop recording, with a running clock. Hold to stop.",
+			"PropertyInspectorPath": "ui/hold.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/record-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "ISO Recording",
+			"UUID": "com.dcdirector.atem-iso.iso",
+			"Icon": "imgs/actions/iso-icon",
+			"Tooltip": "Record every camera as its own file. Locks while recording.",
+			"PropertyInspectorPath": "ui/simple.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/iso-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Stream",
+			"UUID": "com.dcdirector.atem-iso.stream",
+			"Icon": "imgs/actions/stream-icon",
+			"Tooltip": "Start and stop the live stream, with a running clock. Hold to stop.",
+			"PropertyInspectorPath": "ui/hold.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/stream-key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Macro",
+			"UUID": "com.dcdirector.atem-iso.macro",
+			"Icon": "imgs/actions/macro-icon",
+			"Tooltip": "Run a macro saved on the switcher. Press again to stop it.",
+			"PropertyInspectorPath": "ui/macro.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/macro-key",
+					"ShowTitle": false
+				}
+			]
+		}
+	],
+	"Category": "ISO Director for ATEM",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Run a Blackmagic ATEM Mini Pro ISO from Stream Deck: switching with live red and green tally, transitions, keyers, HDMI output, macros, streaming, and recording with ISO control. Not affiliated with or endorsed by Blackmagic Design.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.dcdirector.atem-iso",
+	"URL": "https://github.com/dcdirector"
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Output</title>
+		<script src="sdpi-components.js"></script>
+	</head>
+	<body>
+		<sdpi-item label="Send to output">
+			<sdpi-select setting="source" datasource="getOutputSources" loading="Reading sources…" default="10010" show-refresh></sdpi-select>
+		</sdpi-item>
+		<sdpi-item label="Output">
+			<sdpi-select setting="output" default="1">
+				<option value="1">1 (HDMI out)</option>
+				<option value="2">2</option>
+			</sdpi-select>
+		</sdpi-item>
+		<sdpi-item label="ATEM IP address">
+			<sdpi-textfield global setting="host" placeholder="192.168.10.240"></sdpi-textfield>
+		</sdpi-item>
+		<sdpi-item>
+			<small>One address for every button. Find it in ATEM Software Control under Switcher Settings, or in ATEM Setup.</small>
+		</sdpi-item>
+	</body>
+</html>

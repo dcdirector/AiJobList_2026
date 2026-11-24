@@ -1,0 +1,4 @@
+node_modules/
+logs/
+*.sdPlugin/bin
+*.sdPlugin/package-lock.json
