@@ -1,0 +1,5 @@
+logs/
+stubs/
+package-lock.json
+node_modules/**/*.map
+node_modules/**/*.d.ts

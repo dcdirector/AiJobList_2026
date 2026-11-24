@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Transition style</title>
+		<script src="sdpi-components.js"></script>
+	</head>
+	<body>
+		<sdpi-item label="Style">
+			<sdpi-select setting="style" default="mix">
+				<option value="mix">Mix (dissolve)</option>
+				<option value="dip">Dip</option>
+				<option value="wipe">Wipe</option>
+				<option value="dve">DVE (push and squeeze)</option>
+			</sdpi-select>
+		</sdpi-item>
+		<sdpi-item label="ATEM IP address">
+			<sdpi-textfield global setting="host" placeholder="192.168.10.240"></sdpi-textfield>
+		</sdpi-item>
+		<sdpi-item>
+			<small>One address for every button. Find it in ATEM Software Control under Switcher Settings, or in ATEM Setup.</small>
+		</sdpi-item>
+	</body>
+</html>

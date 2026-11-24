@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Keyer</title>
+		<script src="sdpi-components.js"></script>
+	</head>
+	<body>
+		<sdpi-item label="Keyer">
+			<sdpi-select setting="keyer" default="1">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</sdpi-select>
+		</sdpi-item>
+		<sdpi-item label="Button label">
+			<sdpi-textfield setting="label" placeholder="e.g. PIP or LOGO" maxlength="12"></sdpi-textfield>
+		</sdpi-item>
+		<sdpi-item label="ATEM IP address">
+			<sdpi-textfield global setting="host" placeholder="192.168.10.240"></sdpi-textfield>
+		</sdpi-item>
+		<sdpi-item>
+			<small>One address for every button. Find it in ATEM Software Control under Switcher Settings, or in ATEM Setup.</small>
+		</sdpi-item>
+	</body>
+</html>
